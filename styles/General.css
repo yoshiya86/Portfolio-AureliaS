@@ -1,0 +1,157 @@
+@font-face {
+  font-family: NaughtyMonster;
+  src: url(../NaughtyMonster.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(240, 249, 255);
+  margin: 80px 100px 0px 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: rgb(0, 64, 102);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.head {
+  font-family: NaughtyMonster;
+  font-size: 72px;
+}
+.sub {
+  font-family: Amaranth;
+  font-size: 20px;
+  font-weight: 700;
+}
+.body {
+  font-family: Amaranth;
+  font-size: 16px;
+}
+.title {
+  font-family: NaughtyMonster;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: Amaranth;
+  font-size: 16px;
+  color: rgb(0, 64, 102);
+  padding: 7px 15px 7px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.type1 {
+  background-color: rgb(0, 64, 102);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.type1:hover {
+  background-color: rgb(255, 194, 210);
+  color: rgb(0, 64, 102);
+}
+.type2 {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0, 64, 102);
+  padding: 6px 15px 6px 15px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.type2:hover {
+  background-color: rgb(0, 64, 102);
+  color: white;
+}
+
+.header {
+  background-color: rgb(75, 220, 253);
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  align-items: center;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 50px 0 50px;
+  z-index: 3;
+}
+.logohead {
+  margin-right: auto;
+}
+.logo {
+  height: 35px;
+}
+.navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav {
+  font-family: Amaranth;
+  font-size: 16px;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.nav:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(75, 220, 253);
+  height: 45px;
+  margin: 0 -100px 0 -100px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon {
+  height: 15px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 100px 50px 0px 50px;
+  }
+  .grid {
+    flex-direction: column;
+  }
+  .navigation {
+    gap: 10px;
+  }
+  .navigation button {
+    font-size: 14px;
+  }
+  .cta .type1 {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  body {
+    margin: 100px 50px 0px 50px;
+  }
+  .grid {
+    flex-direction: column;
+  }
+  .navigation {
+    gap: 10px;
+  }
+  .navigation button {
+    font-size: 14px;
+  }
+  .cta .type1 {
+    margin-bottom: 10px;
+  }
+}
