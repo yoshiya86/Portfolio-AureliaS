@@ -4,6 +4,7 @@
     <title>Graphic Design</title>
     <link rel="stylesheet" href="styles/General.css" />
     <link rel="stylesheet" href="styles/Porto.css" />
+    <link rel="javascript" href="js/javascript.js" />
   </head>
   <body>
     <nav>
@@ -32,7 +33,7 @@
 
     <p class="title">Graphic Design</p>
     <main class="deck">
-      <div class="card">
+      <div class="card" onclick="on()">
         <img src="porto/GD1.jpg" />
         <p class="sub">Satu Ibu Satu Pohon</p>
       </div>
@@ -65,19 +66,21 @@
         <p class="sub">Charoen Pokphand</p>
       </div>
     </main>
-    <!--
-    <div class="preview gd1" data-closable>
-      <img src="porto/GD1.jpg" />
-      <img src="porto/GD2.jpg" />
-      <button class="sub" aria-label="Close" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
+
+    <div id="gd1" class="overlay" onclick="off()">
+      <div class="preview">
+        <button class="type1" onclick="plusDivs(-1);on()">&lt;</button>
+        <img class="prev" src="porto/GD1.jpg" />
+        <img class="prev" src="porto/GD2.jpg" />
+        <button class="type1" onclick="plusDivs(1);on()">&gt;</button>
+      </div>
     </div>
-    -->
+
     <footer class="footer-inside">
       <p class="body">Copyright</p>
       <img class="icon" src="icon/copyright.png" />
       <p class="body">2024, Aurelia Sandi Rahardjo</p>
     </footer>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
