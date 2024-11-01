@@ -1,3 +1,4 @@
+/*
 let slideIndex = 1;
 showDivs(slideIndex);
 
@@ -26,3 +27,4 @@ function on() {
 function off() {
   document.getElementById("gd1").style.display = "none";
 }
+*/

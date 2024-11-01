@@ -125,6 +125,15 @@ button {
   body {
     margin: 100px 50px 0px 50px;
   }
+  .header {
+    height: 80px;
+  }
+  .nav {
+    font-size: 21px;
+  }
+  button {
+    font-size: 21px;
+  }
   .grid {
     flex-direction: column;
   }
